@@ -1,0 +1,1 @@
+aws elbv2 create-load-balancer --type network --name Production-Internal-NLB --subnets subnet-0f15985d6720ba2bf subnet-0454a0daf6c740cec --scheme internal

@@ -1,0 +1,1 @@
+aws ec2 describe-instances --filters Name=tag:ENV,Values=Production Name=instance-state-name,Values=running Name=tag-key,Values=Name --query 'Reservations[*].Instances[*].{PrivateIpAddress:PrivateIpAddress,Name:Tags[?Key==`Name`]|[0].Value}' 
